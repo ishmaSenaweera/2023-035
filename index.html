@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #869a61;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+  </style>
+
+
+
+  <title>BloomQuest</title>
+</head>
+
+<body style="background-color: #E9F7EF">
+  <!-- NavBar -->
+  <nav id="navmenu" class="navbar navbar-expand-lg sticky-top" style="background-color: #ECEBEA">
+    <a class="navbar-brand" href="#home">
+      <img src="./Images/logo.png" width="100" height="50" class="d-inline-block align-top" loading="lazy">      
+    </a>
+    <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="navmenu-links" class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Scope
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#a">Introduction and Background</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#video">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#milestones">Milestones</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Materials
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#downloads">Project Documents</a>
+            <a class="dropdown-item" href="#presentations">Project Presentations</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-cta">
+        <h1>BloomQuest<br /></h1>
+        <p>A Personalized Learning Platform Based on Bloom’s Taxonomy and Knowledge Based Concepts.</p>
+      </div>
+    </div>
+    <div class="hero-cover">
+      <img class="hero-image" src="./Images/background.png" />
+    </div>
+  </section>
+  <!-- project-scope --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section style="background-color:#FDFEFE">
+    <div class="container">
+      <!-- Literature Survey -->
+      <div id="a"><br><br><br><br>
+        <h2 style="color:#555">Introduction and Background</h2>
+        </br>
+        <p style="text-align: justify;">content</P>
+      </div>
+
+
+      <div id="b"><br><br><br><br>
+        <h2 style="color:#555">Literature Survey</h2>
+        </br>
+        <p style="text-align: justify;">content</P>
+        <p style="text-align: justify;">Referance :
+        <p>
+        <p style="text-align: justify;">content
+        </p>
+      </div>
+
+      <div id="c"><br><br><br><br>
+        <h2 style="color:#555">Research Gap</h2>
+        </br>
+        <p style="text-align: justify;">
+        	Limited awareness and utilization of Bloom's Taxonomy among university students, which adversely affects their academic performance in standardized exams, and the proposed personalized self-learning system aims to address this gap by empowering students to align their study materials with Bloom's Taxonomy and enhance their cognitive skills for improved academic success.
+        </P>
+      </div>
+
+      <div id="d"><br><br><br><br>
+        <h2 style="color:#555">Research Problem</h2>
+        </br>
+        <p style="text-align: justify;">content</P>
+      </div>
+      <div id="e"><br><br><br><br>
+        <h2 style="color:#555">Research Solution</h2>
+        </br>
+        <p style="text-align: justify;">content
+        </P>
+      </div>
+
+      <div id="g"><br><br><br><br>
+        <h2 style="color:#555">Research Objective
+        </h2>
+        </br>
+        <p style="text-align: justify;"><strong style="color:#555;">Main Objective: </strong><br>Develop an online platform for undergraduate students that enables them to upload their study materials and engage in effective self-study.</P>
+        <p style="text-align: justify;"><strong style="color:#555;">Sub Objectives: </strong><br>
+        	<strong>1. Wijayasena W.D.N.D.T (IT20133368) LEADER: </strong><br>Develop an effective recommendation system that provides personalized and contextually relevant resources during their self-study sessions. <br>
+        	<strong>2. Senaweera T.I.S (IT20123468): </strong><br>Develop a method to predict student performance utilizing Bloom's Taxonomy levels integrated with Exponentially Weighted Moving Average (EWMA). <br>
+        	<strong>3. Weerasekara N.N (IT20133504): </strong><br>Develop a knowledge-based system that uses domain-specific knowledge to generate more precise and significant mind maps from the input material. <br>
+        	<strong>4. Colambage K.G (IT20126438): </strong><br>Develop a system to generate questions categorized according to Bloom's Taxonomy levels from uploaded study material with answers.
+        </P>
+
+      </div>
+      <!-- Methodology -->
+      <div id="h"><br><br><br><br>
+        <h2 style="color:#2F4858">Overall System Diagram
+        </h2>
+        <div style="margin-top: 50px"> 
+        	<center><img src="./Images/system.png" alt="Architecture" width="600" height="500"></center>
+        </div>
+        
+        </br>       
+      </div>   
+
+      <div id="j"><br><br><br><br>
+        <h2 style="color:#2F4858">Technology and Technologies
+        </h2><br>              
+
+        <div class="row technology mt-5">
+
+        	<div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/react.png" alt="React">
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/flask.png" alt="Flask">
+            </div>
+          </div>
+         
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/python.png" alt="Python">
+            </div>
+
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/jupyter.png" alt="Jupyter Notebook">
+            </div>
+
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/pyviz.png" alt="PyViz">
+            </div>
+
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="./Images/mongodb.png" alt="Mongo DB">
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Milestones -->
+
+  <section id="milestones" style="background-color:white;"><br>
+    <div class="container">
+      <br><br>
+      <h2 style="color:#2F4858">Milestones</h2><br><br>
+      <div class="sub-section">
+        <div class="milestones">
+
+          <!-- Project Proposal -->
+
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+            <h4>1. Project Proposal Presentation</h4>
+            <p><strong>Submission Date : </strong>3rd April 2023</p>
+            <p><strong>Marks Allocated : </strong>6</p>
+          </div>
+
+          <!-- Progress Presentation I -->
+
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h4>2. Progress Presentation I</h4>
+            <p><strong>Submission Date : </strong>26th May 2023</p>
+            <p><strong>Marks Allocated : </strong>15</p>
+          </div>
+
+          <!-- Progress Presentation II -->
+          
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+            <h4>3. Progress Presentation II</h4>
+            <p><strong>Submission Date : </strong>7th September 2023</p>
+            <p><strong>Marks Allocated : </strong>18</p>            
+          </div>
+      
+          
+          <!-- Final Report -->
+
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+             <h4>4. Final Report</h4>
+            <p><strong>Submission Date : </strong>10th September 2023</p>
+            <p><strong>Marks Allocated : </strong>19</p>
+          </div>
+
+           <!-- Logbook -->
+
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">           
+            <h4>5. Logbook</h4>
+            <p><strong>Submission Date : </strong>30th October 2023</p>
+            <p><strong>Marks Allocated : </strong>2</p>
+          </div>
+
+          <!-- Viva -->
+
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h4>6. Final Presentation & Viva</h4>
+            <p><strong>Submission Date : </strong>30th October 2023</p>
+            <p><strong>Marks Allocated : </strong>20</p>
+          </div>
+
+           <!-- Research Paper -->
+
+           <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+           <h4>7. Research Paper</h4>
+            <p><strong>Submission Date : </strong>6th November 2023</p>
+            <p><strong>Marks Allocated : </strong>10</p>
+          </div>
+        
+		<!-- Website -->
+
+		<label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">            
+            <h4>8. Website Assessment</h4>
+            <p><strong>Submission Date : </strong>7th November 2023</p>
+            <p><strong>Marks Allocated : </strong>2</p>
+          </div>          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads -->
+  <section id="downloads" style="background-color:white;"><br>
+    <div class="container">
+      <br><br>
+      <h2 style="color:#555">Documents</h2><br>
+      <!-- Documents -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container" style="background-color:#555;">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#fdfdfd">Topic Assesment</h4>
+              </a>
+              <p><strong>Submission Date : 20th January 2023 </strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container" style="background-color:#555;">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#FDFEFE">Project Charter</h4>
+              </a>
+              <p><strong>Submission Date : 30th January 2023 </strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container" style="background-color:#555;">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#FDFEFE">Project Proposal</h4>
+              </a>
+              <p><strong>Submission Date : 24th March 2023</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#555">Status Documents I</h4>
+              </a>
+              <p><strong>Submission Date : 22nd March 2023</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#555">Status Documents II</h4>
+              </a>
+              <p><strong>Submission Date : 6th September 2023</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container">
+              <br><a href="" target="_blank">
+                <h4 style="color:#555">Research Paper</h4>
+              </a>
+              <p><strong>Submission Date : 6th November 2023</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="container" style="background-color:#555;">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#FDFEFE">Final Report</h4>
+              </a>
+              <p><strong>Submission Date : 10th September 2023</strong>1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="container" style="background-color:#555;">
+              <br><a href="#" target="_blank">
+                <h4 style="color:#FDFEFE">Poster</h4>
+              </a>
+              <p><strong>Submission Date : </strong></p>
+
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="container" style="background-color:#555;">
+              <br><a href="" target="_blank">
+                <h4 style="color:#FDFEFE">Log Book</h4>
+              </a>
+              <p><strong>Submission Date : </strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="presentations"><br><br><br><br>
+        <h2 style="color:#555">Presentation</h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="container" style="background-color:#555;">
+                <br>
+                <a href="#" target="_blank">
+                  <h4 style="color: #fdfdfd;">Project Proposal</h4>
+                </a>
+                <p><strong>Submission Date : 31st March 2023</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="container" style="background-color:#555;">
+                <br>
+                <a href="#" target="_blank">
+                  <h4 style="color:#FDFEFE">Progress Presentation I</h4>
+                </a>
+                <p><strong>Submission Date : 26th May 2023</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="container" style="background-color:#555;">
+                <br>
+                <a href="#" target="_blank">
+                  <h4 style="color:#FDFEFE">Progress Presentation II</h4>
+                </a>
+                <p><strong>Submission Date : </strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <br>
+                <a href="#" target="_blank">
+                  <h4 style="color:#555">Final Presentation</h4>
+                </a>
+                <p><strong>Submission Date : </strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Team members -->
+  <section id="about" class="main-sections " style="background-color:#FDFEFE"><br>
+    <div class="container"><br><br>
+      <h2 style="color:#9a6161">Meet Our Team !</h2>
+
+      <div class="row"> 
+
+ 		<div class="cardp">
+        <img src="./Profiles/dineth.png">
+        <div class="detailsp">
+          <h3>Dineth Wijayasena</h3>
+          <p>Associate Cloud Engineer</p>
+          <div class="social-linksp">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href=""><i class="uil uil-instagram"></i></a>
+            <a href=""><i class="uil uil-twitter-alt"></i></a>
+            <a href=""><i class="uil uil-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <div class="cardp">
+        <img src="./Profiles/ishma.png">
+        <div class="detailsp">
+          <h3>Ishma Senaweera</h3>
+          <p>Associate Software Engineer</p>
+          <div class="social-linksp">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href=""><i class="uil uil-instagram"></i></a>
+            <a href=""><i class="uil uil-twitter-alt"></i></a>
+            <a href=""><i class="uil uil-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <div class="cardp">
+        <img src="./img/img3.jpg">
+        <div class="detailsp">
+          <h3>Sandeep</h3>
+          <p>App Developer</p>
+          <div class="social-linksp">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href=""><i class="uil uil-instagram"></i></a>
+            <a href=""><i class="uil uil-twitter-alt"></i></a>
+            <a href=""><i class="uil uil-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <div class="cardp">
+        <img src="./img/img3.jpg">
+        <div class="detailsp">
+          <h3>Sandeep</h3>
+          <p>App Developer</p>
+          <div class="social-linksp">
+            <a href="#"><i class="uil uil-facebook-f"></i></a>
+            <a href=""><i class="uil uil-instagram"></i></a>
+            <a href=""><i class="uil uil-twitter-alt"></i></a>
+            <a href=""><i class="uil uil-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      </div>     
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" style="background-color:white;"><br>
+    <div class="container"><br><br>
+      <h2 style="color:#2F4858">Achivements</h2>
+      </br>
+      <div class="column">
+        <div class="card">
+          <div class="container" style="background-color:#969fff;">
+            <br>
+            <h4>Conference</h4>
+            <p>Represented Sri Lanka Institute of Information Technology and Published the research paper </p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+    <span>Created By <a href="#">BloomQuest Team</a> | <span class="far fa-copyright"></span> 2023 All rights
+      reserved.</span>
+  </footer>
+  <!-- Scripts -->
+  <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
+  <script src="./lib/fontawesome/js/all.min.js"></script>
+  <script src="./lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
