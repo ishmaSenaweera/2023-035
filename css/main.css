@@ -94,7 +94,7 @@ html {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: white;
+  color: #98afba;
   border-bottom: 2px solid transparent;
   padding-bottom: 20px;
   -webkit-transition: all 0.15s ease-in;
@@ -102,24 +102,24 @@ html {
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #869a61;
-  border-bottom: 2px solid #869a61;
+  color: #003a51;
+  border-bottom: 2px solid #003a51;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
 
 .navbar .navbar-nav .nav-item .dropdown-item:active {
-  background-color: #869a61;
+  background-color: #003a51;
 }
 
 .navbar .navbar-nav .nav-item .dropdown-item:hover {
-  background-color: #869a61;
+  background-color: #003a51;
   color: white;
 }
 
 .navbar .navbar-nav .active .nav-link {
-  color: #869a61;
-  border-bottom: 2px solid #869a61;
+  color: #003a51;
+  border-bottom: 2px solid #003a51;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
@@ -137,11 +137,11 @@ html {
 }
 
 .nav-bg-light .navbar-nav .active .nav-link {
-  color: #869a61;
+  color: #003a51;
 }
 
 #home {
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -193,15 +193,12 @@ html {
 }
 
 #home .hero-cover {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
-#home .hero-cover img {
-  position: absolute;
-}
-
 #home .hero-cover .hero-image {
+  margin-top: 55px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -288,7 +285,11 @@ a {
   color: #f40f02;
 }
 
-.main-sections .sub-section .downloads-container .card:hover .download-powerpoint {
+.main-sections
+  .sub-section
+  .downloads-container
+  .card:hover
+  .download-powerpoint {
   color: #d04423;
 }
 
@@ -421,7 +422,7 @@ a {
   padding: 25px;
   width: 150px;
   height: 150px;
-  background-color: #CAF4EC;
+  background-color: #caf4ec;
 }
 
 .technology .avatar img {
@@ -510,7 +511,6 @@ a {
 .timeline-event-copy strong {
   font-weight: 700;
 }
-
 
 .about-us-card {
   min-height: 560px;
@@ -749,7 +749,6 @@ a {
   background-image: linear-gradient(to left, #869a61, #869a61, #869a61);
 }
 
-
 /* footer section styling */
 footer {
   background: #555;
@@ -767,16 +766,16 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-
 .container .cardp {
   width: 250px;
-  height: 300px;
+  height: 350px;
   position: relative;
   border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
   margin: 15px;
+  z-index: 1;
 }
 
 .cardp::after {
@@ -796,13 +795,13 @@ footer span a:hover {
   top: 0;
   left: 0;
   object-fit: fit;
-  transition: .6s;
+  transition: 0.6s;
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
   z-index: 99;
 }
 
 .cardp:hover img {
-  transform: scale(.50) translateY(-120px);
+  transform: scale(0.5) translateY(-120px);
   border-radius: 10px;
 }
 
@@ -816,7 +815,7 @@ footer span a:hover {
   align-items: center;
   padding-bottom: 40px;
   transform: translateY(100%);
-  transition: .6s;
+  transition: 0.6s;
 }
 
 .cardp:hover .detailsp {
@@ -843,10 +842,10 @@ footer span a:hover {
   height: 30px;
   margin: 0 5px;
   border-radius: 50%;
-  color: #333;
+  color: #ffffff;
   background-color: rgb(182, 182, 182);
   text-decoration: none;
-  transition: .6s;
+  transition: 0.6s;
   display: grid;
   place-items: center;
   font-size: 17px;
@@ -854,6 +853,6 @@ footer span a:hover {
 
 .detailsp .social-linksp a:hover {
   transform: rotate(360deg);
-  background-color: rgb(0, 81, 255);
+  background-color: #98dcf9;
   color: #fff;
 }

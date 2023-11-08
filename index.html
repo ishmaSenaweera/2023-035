@@ -72,18 +72,26 @@
     .button:hover {
       background-color: #555;
     }
+
+    #achievements .container {
+      transition: transform 0.3s, box-shadow 0.3s;
+     }
+
+    #achievements .container.hover-effect:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
   </style>
-
-
-
   <title>BloomQuest</title>
 </head>
 
-<body style="background-color: #E9F7EF">
+<body>
+
   <!-- NavBar -->
   <nav id="navmenu" class="navbar navbar-expand-lg sticky-top" style="background-color: #ECEBEA">
     <a class="navbar-brand" href="#home">
-      <img src="./Images/logo.png" width="100" height="50" class="d-inline-block align-top" loading="lazy">      
+      <img src="./Images/logo.png" width="100" height="60" class="d-inline-block align-top" loading="lazy" alt="Logo">      
     </a>
     <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -99,11 +107,14 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Project Scope
+            Project Domain
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#a">Introduction and Background</a>
-
+            <a class="dropdown-item" href="#background">Background and Introduction</a>
+            <a class="dropdown-item" href="#gap">Research Gap</a>
+            <a class="dropdown-item" href="#problem">Research Problem</a>
+            <a class="dropdown-item" href="#solution">Research Solution</a>
+            <a class="dropdown-item" href="#objectives">Research Objectives</a>            
           </div>
         </li>
         <li class="nav-item">
@@ -118,7 +129,8 @@
             Project Materials
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#downloads">Project Documents</a>
+            <a class="dropdown-item" href="#group-documents">Project Group Documents</a>
+            <a class="dropdown-item" href="#individual-documents">Project Individual Documents</a>
             <a class="dropdown-item" href="#presentations">Project Presentations</a>
           </div>
         </li>
@@ -132,85 +144,105 @@
       </ul>
     </div>
   </nav>
+
   <!-- Home -->
   <section id="home">
     <div class="container">
       <div class="hero-cta">
-        <h1>BloomQuest<br /></h1>
-        <p>A Personalized Learning Platform Based on Bloom’s Taxonomy and Knowledge Based Concepts.</p>
+        <h1 style="font-size: 10rem; color: #ffffff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); margin-bottom: 10px;">BloomQuest</h1>
+        <p style="font-size: 3rem; color: #E6F4F1; margin-top: 0; margin-bottom: 20px;">A Personalized Learning Platform Based on Bloom's Taxonomy and Knowledge Based Concepts.</p>
+        
       </div>
     </div>
     <div class="hero-cover">
-      <img class="hero-image" src="./Images/background.png" />
+      <img class="hero-image" src="./Images/background.gif" alt="Background"/>
     </div>
   </section>
-  <!-- project-scope --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <!-- project-domain --><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <section style="background-color:#FDFEFE">
     <div class="container">
-      <!-- Literature Survey -->
-      <div id="a"><br><br><br><br>
-        <h2 style="color:#555">Introduction and Background</h2>
+
+      <!-- Background -->
+      <div id="background"><br><br><br><br>
+        <h2 style="color:#555">Background and Introduction</h2>
         </br>
-        <p style="text-align: justify;">content</P>
+        <p style="text-align: justify;">
+        This research delves into the academic challenges faced by university students, particularly the stress and pressure they experience. Students often struggle with tough subjects, assignments, and exams, and they may lack efficient study techniques. Additionally, many are unaware of how Bloom's Taxonomy influences their exams. 
+        By examining these issues, this research seeks to uncover the extent of these challenges and find ways to help students better manage academic stress, improve study methods, and grasp the impact of Bloom's Taxonomy on their exams, ultimately enhancing their academic experience.
+        </P>
       </div>
 
-
-      <div id="b"><br><br><br><br>
-        <h2 style="color:#555">Literature Survey</h2>
-        </br>
-        <p style="text-align: justify;">content</P>
-        <p style="text-align: justify;">Referance :
-        <p>
-        <p style="text-align: justify;">content
-        </p>
-      </div>
-
-      <div id="c"><br><br><br><br>
+      <!-- Gap -->
+      <div id="gap"><br><br><br><br>
         <h2 style="color:#555">Research Gap</h2>
         </br>
         <p style="text-align: justify;">
-        	Limited awareness and utilization of Bloom's Taxonomy among university students, which adversely affects their academic performance in standardized exams, and the proposed personalized self-learning system aims to address this gap by empowering students to align their study materials with Bloom's Taxonomy and enhance their cognitive skills for improved academic success.
+        Absence of personalized self-learning systems that specifically guide university students in understanding and effectively applying Bloom's Taxonomy in their self-study practices. 
+        Current educational resources do not adequately address this gap, indicating the need for innovative solutions that empower students to optimize their self-study efforts and enhance their academic success.
         </P>
       </div>
 
-      <div id="d"><br><br><br><br>
+      <!-- Problem -->
+      <div id="problem"><br><br><br><br>
         <h2 style="color:#555">Research Problem</h2>
         </br>
-        <p style="text-align: justify;">content</P>
+        <p style="text-align: justify;">
+        Deficiency in effective, personalized systems that assist university students in developing self-study skills and aligning their learning materials with Bloom's Taxonomy. 
+        This lack of comprehensive support has been associated with a negative impact on students' academic performance in standardized exams.</P>
       </div>
-      <div id="e"><br><br><br><br>
+       
+      <!-- Solution -->
+      <div id="solution"><br><br><br><br>
         <h2 style="color:#555">Research Solution</h2>
         </br>
-        <p style="text-align: justify;">content
+        <p style="text-align: justify;">
+        <strong>BloomQuest</strong> is an innovative approach that incorporates Bloom's Taxonomy, enabling students to identify their cognitive levels and develop essential learning skills with features like: <br>
+        1. Performance tracking and insights for each module. <br>
+        2. Mind map generation based on student-uploaded study materials as the foundation. <br>
+        3. Advanced search functionality for extended learning. <br>
+        4. Quizzes based on Bloom's Taxonomy. <br>
+        This system empowers students to take control of their learning, fostering independence and deeper understanding.
         </P>
       </div>
 
-      <div id="g"><br><br><br><br>
-        <h2 style="color:#555">Research Objective
+      <div id="objectives"><br><br><br><br>
+        <h2 style="color:#555">Research Objectives
         </h2>
         </br>
         <p style="text-align: justify;"><strong style="color:#555;">Main Objective: </strong><br>Develop an online platform for undergraduate students that enables them to upload their study materials and engage in effective self-study.</P>
         <p style="text-align: justify;"><strong style="color:#555;">Sub Objectives: </strong><br>
-        	<strong>1. Wijayasena W.D.N.D.T (IT20133368) LEADER: </strong><br>Develop an effective recommendation system that provides personalized and contextually relevant resources during their self-study sessions. <br>
-        	<strong>2. Senaweera T.I.S (IT20123468): </strong><br>Develop a method to predict student performance utilizing Bloom's Taxonomy levels integrated with Exponentially Weighted Moving Average (EWMA). <br>
-        	<strong>3. Weerasekara N.N (IT20133504): </strong><br>Develop a knowledge-based system that uses domain-specific knowledge to generate more precise and significant mind maps from the input material. <br>
+        	<strong>1. Wijayasena W.D.N.D.T (IT20133368) LEADER: </strong><br>Develop an effective recommendation system that provides personalized and contextually relevant resources during their self-study sessions. <br><br>
+        	<strong>2. Senaweera T.I.S (IT20123468): </strong><br>Develop a method to predict student performance utilizing Bloom's Taxonomy levels integrated with Exponentially Weighted Moving Average (EWMA). <br><br>
+        	<strong>3. Weerasekara N.N (IT20133504): </strong><br>Develop a knowledge-based system that uses domain-specific knowledge to generate more precise and significant mind maps from the input material. <br><br>
         	<strong>4. Colambage K.G (IT20126438): </strong><br>Develop a system to generate questions categorized according to Bloom's Taxonomy levels from uploaded study material with answers.
         </P>
 
       </div>
+
       <!-- Methodology -->
       <div id="h"><br><br><br><br>
         <h2 style="color:#2F4858">Overall System Diagram
         </h2>
-        <div style="margin-top: 50px"> 
-        	<center><img src="./Images/system.png" alt="Architecture" width="600" height="500"></center>
+        <div style="margin-top: 50px; text-align: center;"> 
+        	<img src="./Images/system.png" alt="Architecture" width="600" height="500">
         </div>
         
         </br>       
       </div>   
 
+        <!-- Video -->
+        <div id="video"><br><br><br><br>
+          <h2 style="color:#2F4858">Introductory Video
+          </h2>
+         
+          </br>       
+        </div>   
+
+      <!-- Tools and Technologies -->
       <div id="j"><br><br><br><br>
-        <h2 style="color:#2F4858">Technology and Technologies
+        <h2 style="color:#2F4858">Tools and Technologies
         </h2><br>              
 
         <div class="row technology mt-5">
@@ -253,8 +285,8 @@
         </div>
       </div>
   </section>
-  <!-- Milestones -->
 
+  <!-- Milestones -->
   <section id="milestones" style="background-color:white;"><br>
     <div class="container">
       <br><br>
@@ -262,81 +294,111 @@
       <div class="sub-section">
         <div class="milestones">
 
-          <!-- Project Proposal -->
-
+          <!-- Topic Assessment -->
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy"
             style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
-            <h4>1. Project Proposal Presentation</h4>
+            <h4>1. Topic Assessment</h4>
+            <p><strong>Submission Date : </strong>20th January 2023</p>
+            <p><strong>Marks Allocated : </strong>No Marks Allocated</p>
+          </div>
+
+          <!-- Project Charter -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h4>2. Project Charter</h4>
+            <p><strong>Submission Date : </strong>30th January 2023</p>
+            <p><strong>Marks Allocated : </strong>No Marks Allocated</p>
+          </div>
+
+          <!-- Project Proposal -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+            <h4>3. Project Proposal Presentation</h4>
             <p><strong>Submission Date : </strong>3rd April 2023</p>
-            <p><strong>Marks Allocated : </strong>6</p>
+            <p><strong>Marks Allocated : </strong>6%</p>
+          </div>
+
+          <!-- Project Proposal Report -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy">
+            <h4>4. Project Proposal Report</h4>
+            <p><strong>Submission Date : </strong>5th May 2023</p>
+            <p><strong>Marks Allocated : </strong>6%</p>
+          </div>
+
+          <!-- Status Document I -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy"  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+            <h4>5. Status Document I</h4>
+            <p><strong>Submission Date : </strong>22nd May 2023</p>
+            <p><strong>Marks Allocated : </strong>1%</p>
           </div>
 
           <!-- Progress Presentation I -->
-
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <h4>2. Progress Presentation I</h4>
+            <h4>6. Progress Presentation I</h4>
             <p><strong>Submission Date : </strong>26th May 2023</p>
-            <p><strong>Marks Allocated : </strong>15</p>
-          </div>
+            <p><strong>Marks Allocated : </strong>15%</p>
+          </div>         
 
-          <!-- Progress Presentation II -->
-          
+          <!-- Status Document II -->      
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy"
             style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
-            <h4>3. Progress Presentation II</h4>
+            <h4>7. Status Document II</h4>
             <p><strong>Submission Date : </strong>7th September 2023</p>
-            <p><strong>Marks Allocated : </strong>18</p>            
+            <p><strong>Marks Allocated : </strong>1%</p>                      
           </div>
-      
-          
-          <!-- Final Report -->
 
+          <!-- Progress Presentation II -->    
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-             <h4>4. Final Report</h4>
+            <h4>8. Progress Presentation II</h4>
+            <p><strong>Submission Date : </strong>7th September 2023</p>
+            <p><strong>Marks Allocated : </strong>18%</p>  
+          </div> 
+                
+          <!-- Final Report -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+             <h4>9. Final Report</h4>
             <p><strong>Submission Date : </strong>10th September 2023</p>
-            <p><strong>Marks Allocated : </strong>19</p>
+            <p><strong>Marks Allocated : </strong>19%</p>
           </div>
 
-           <!-- Logbook -->
-
+          <!-- Logbook -->
           <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy"
-            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">           
-            <h4>5. Logbook</h4>
+          <div class="timeline-event-copy">           
+            <h4>10. Logbook</h4>
             <p><strong>Submission Date : </strong>30th October 2023</p>
-            <p><strong>Marks Allocated : </strong>2</p>
+            <p><strong>Marks Allocated : </strong>2%</p>
           </div>
 
           <!-- Viva -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
+            <h4>11. Final Presentation & Viva</h4>
+            <p><strong>Submission Date : </strong>30th October 2023</p>
+            <p><strong>Marks Allocated : </strong>20%</p>
+          </div>
 
+          <!-- Research Paper -->
           <label class="timeline-event-icon"></label>
           <div class="timeline-event-copy">
-            <h4>6. Final Presentation & Viva</h4>
-            <p><strong>Submission Date : </strong>30th October 2023</p>
-            <p><strong>Marks Allocated : </strong>20</p>
-          </div>
-
-           <!-- Research Paper -->
-
-           <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy"
-            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">
-           <h4>7. Research Paper</h4>
+           <h4>12. Research Paper</h4>
             <p><strong>Submission Date : </strong>6th November 2023</p>
-            <p><strong>Marks Allocated : </strong>10</p>
+            <p><strong>Marks Allocated : </strong>10%</p>
           </div>
         
-		<!-- Website -->
-
-		<label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">            
-            <h4>8. Website Assessment</h4>
+          <!-- Website -->
+          <label class="timeline-event-icon"></label>
+          <div class="timeline-event-copy" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#CAF4EC;">            
+            <h4>13. Website Assessment</h4>
             <p><strong>Submission Date : </strong>7th November 2023</p>
-            <p><strong>Marks Allocated : </strong>2</p>
+            <p><strong>Marks Allocated : </strong>2%</p>
           </div>          
 
         </div>
@@ -345,17 +407,18 @@
   </section>
 
   <!-- Downloads -->
-  <section id="downloads" style="background-color:white;"><br>
+  <section style="background-color:white;"><br>
     <div class="container">
-      <br><br>
-      <h2 style="color:#555">Documents</h2><br>
-      <!-- Documents -->
+      
+      <!-- Group Documents -->
+      <div id="group-documents"><br><br><br><br>
+      <h2 style="color:#555">Group Documents</h2><br>
       <div class="row">
         <div class="column">
           <div class="card">
-            <div class="container" style="background-color:#555;">
-              <br><a href="#" target="_blank">
-                <h4 style="color:#fdfdfd">Topic Assesment</h4>
+            <div class="container" style="background-color:#69ADC9;">
+              <br><a href="./Documents/TAF_2023-035.pdf" target="_blank" download>
+                <h4 style="color:#fdfdfd">Topic Assessment</h4>
               </a>
               <p><strong>Submission Date : 20th January 2023 </strong></p>
             </div>
@@ -364,8 +427,8 @@
 
         <div class="column">
           <div class="card">
-            <div class="container" style="background-color:#555;">
-              <br><a href="#" target="_blank">
+            <div class="container" style="background-color:#69ADC9;">
+              <br><a href="./Documents/Charter_2023-035.pdf" target="_blank" download>
                 <h4 style="color:#FDFEFE">Project Charter</h4>
               </a>
               <p><strong>Submission Date : 30th January 2023 </strong></p>
@@ -375,92 +438,115 @@
 
         <div class="column">
           <div class="card">
-            <div class="container" style="background-color:#555;">
-              <br><a href="#" target="_blank">
-                <h4 style="color:#FDFEFE">Project Proposal</h4>
-              </a>
-              <p><strong>Submission Date : 24th March 2023</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <br><a href="#" target="_blank">
-                <h4 style="color:#555">Status Documents I</h4>
-              </a>
-              <p><strong>Submission Date : 22nd March 2023</strong></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <br><a href="#" target="_blank">
-                <h4 style="color:#555">Status Documents II</h4>
-              </a>
-              <p><strong>Submission Date : 6th September 2023</strong></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <br><a href="" target="_blank">
-                <h4 style="color:#555">Research Paper</h4>
-              </a>
-              <p><strong>Submission Date : 6th November 2023</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <div class="container" style="background-color:#555;">
-              <br><a href="#" target="_blank">
+            <div class="container" style="background-color:#69ADC9;">
+              <br><a href="./Documents/Final_Report_ 2023-035.pdf" target="_blank" download>
                 <h4 style="color:#FDFEFE">Final Report</h4>
               </a>
-              <p><strong>Submission Date : 10th September 2023</strong>1</p>
+              <p><strong>Submission Date : 30th September 2023 </strong></p>
             </div>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <div class="container" style="background-color:#555;">
-              <br><a href="#" target="_blank">
-                <h4 style="color:#FDFEFE">Poster</h4>
+            <div class="container" style="background-color:#69ADC9;">
+              <br><a href="./Documents/Paper/Research_Paper.pdf" target="_blank" download>
+                <h4 style="color:#FDFEFE">Research Paper</h4>
               </a>
-              <p><strong>Submission Date : </strong></p>
-
+              <p><strong>Submission Date : 6th November 2023 </strong></p>
             </div>
           </div>
         </div>
-        <div class="column">
-          <div class="card">
-            <div class="container" style="background-color:#555;">
-              <br><a href="" target="_blank">
-                <h4 style="color:#FDFEFE">Log Book</h4>
-              </a>
-              <p><strong>Submission Date : </strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>  
 
-      <div id="presentations"><br><br><br><br>
-        <h2 style="color:#555">Presentation</h2>
+      <!-- Individual Documents -->
+      <div id="individual-documents"><br><br><br><br>
+        <h2 style="color:#555">Individual Documents</h2><br>
+
         <div class="row">
           <div class="column">
             <div class="card">
-              <div class="container" style="background-color:#555;">
+              <div class="container">
                 <br>
-                <a href="#" target="_blank">
+                <h4 style="color:#555">Proposal Documents</h4>                
+                <p><strong>Submission Date : 24th March 2023</strong></p>
+                <a href="./Documents/Proposal/Proposal Document - Wijayasena W.D.N.D.T.pdf" target="_blank" download>Wijayasena W.D.N.D.T (IT20133368)</a><br>
+                <a href="./Documents//Proposal/Proposal Document - Senaweera T.I.S.pdf" target="_blank" download>Senaweera T.I.S (IT20123468)</a><br>
+                <a href="./Documents/Proposal/Proposal Document - Weerasekara N.N.pdf" target="_blank" download>Weerasekara N.N (IT20133504)</a><br>
+                <a href="./Documents/Proposal/Proposal Document - Colamgabe K.G.pdf" target="_blank" download>Colambage K.G (IT20126438)</a><br>        
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <br>
+                <h4 style="color:#555">Status Documents I</h4>                
+                <p><strong>Submission Date : 22nd May 2023</strong></p>
+                <a href="./Documents/SD1/Status Document1 - Wijayasena W.D.N.D.T.pdf" target="_blank" download>Wijayasena W.D.N.D.T (IT20133368)</a><br>
+                <a href="./Documents/SD1/Status Document1 - Senaweera T.I.S.pdf" target="_blank" download>Senaweera T.I.S (IT20123468)</a><br>
+                <a href="./Documents/SD1/Status Document1 - Weerasekara N.N.pdf" target="_blank" download>Weerasekara N.N (IT20133504)</a><br>
+                <a href="./Documents/SD1/Status Document1 - Colambage K.G.pdf" target="_blank" download>Colambage K.G (IT20126438)</a><br>        
+              </div>
+            </div>
+          </div>
+  
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <br>
+                <h4 style="color:#555">Status Documents II</h4>              
+                <p><strong>Submission Date : 6th September 2023</strong></p>
+                <a href="./Documents/SD2/Status Document2 - Wijayasena W.D.N.D.T.pdf" target="_blank" download>Wijayasena W.D.N.D.T (IT20133368)</a><br>
+                <a href="./Documents/SD2/Status Document2 - Senaweera.T.I.S.pdf" target="_blank" download>Senaweera T.I.S (IT20123468)</a><br>
+                <a href="./Documents/SD2/Status Document2 - Weerasekara N.N.pdf" target="_blank" download>Weerasekara N.N (IT20133504)</a><br>
+                <a href="./Documents/SD2/Status Document2 - Colambage K.G.pdf" target="_blank" download>Colambage K.G (IT20126438)</a><br> 
+              </div>
+            </div>
+          </div> 
+        </div>
+          
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <br>
+                <h4 style="color:#555">Final Reports</h4>               
+                <p><strong>Submission Date : 10th September 2023</strong></p>
+                <a href="./Documents/Final/Final Report - Wijayasena W.D.N.D.T.pdf" target="_blank" download>Wijayasena W.D.N.D.T (IT20133368)</a><br>
+                <a href="./Documents/Final/Final Report - Senaweera T.I.S.pdf" target="_blank" download>Senaweera T.I.S (IT20123468)</a><br>
+                <a href="./Documents/Final/Final Report - Weerasekara N.N.pdf" target="_blank" download>Weerasekara N.N (IT20133504)</a><br>
+                <a href="./Documents/Final/Final Report - Colambage K.G.pdf" target="_blank" download>Colambage K.G (IT20126438)</a><br> 
+              </div>
+            </div>
+          </div>   
+
+          <div class="column">
+            <div class="card">
+              <div class="container">
+                <br>
+                <h4 style="color:#555">Log Books</h4>               
+                <p><strong>Submission Date : 30th October 2023</strong></p>
+                <a href="./Documents/Log/Log Book - Wijayasena W.D.N.D.T.pdf" target="_blank" download>Wijayasena W.D.N.D.T (IT20133368)</a><br>
+                <a href="./Documents/Log/Log Book - Senaweera T.I.S.pdf" target="_blank" download>Senaweera T.I.S (IT20123468)</a><br>
+                <a href="./Documents/Log/Log Book - Weerasekara N.N.pdf" target="_blank" download>Weerasekara N.N (IT20133504)</a><br>
+                <a href="#" target="_blank" download>Colambage K.G (IT20126438)</a><br> 
+              </div>
+            </div>
+          </div>
+        </div>            
+      </div>         
+
+      <!-- Presentations -->
+      <div id="presentations"><br><br><br><br>
+        <h2 style="color:#555">Presentations</h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="container" style="background-color:#69ADC9;">
+                <br>
+                <a href="./Documents/Proposal_2023-035.pptx" target="_blank" download>
                   <h4 style="color: #fdfdfd;">Project Proposal</h4>
                 </a>
                 <p><strong>Submission Date : 31st March 2023</strong></p>
@@ -469,9 +555,9 @@
           </div>
           <div class="column">
             <div class="card">
-              <div class="container" style="background-color:#555;">
+              <div class="container" style="background-color:#69ADC9;">
                 <br>
-                <a href="#" target="_blank">
+                <a href="./Documents/PP1_2023-035.pptx" target="_blank" download>
                   <h4 style="color:#FDFEFE">Progress Presentation I</h4>
                 </a>
                 <p><strong>Submission Date : 26th May 2023</strong></p>
@@ -480,12 +566,12 @@
           </div>
           <div class="column">
             <div class="card">
-              <div class="container" style="background-color:#555;">
+              <div class="container" style="background-color:#69ADC9;">
                 <br>
-                <a href="#" target="_blank">
+                <a href="./Documents/PP2_2023-035.pptx" target="_blank" download>
                   <h4 style="color:#FDFEFE">Progress Presentation II</h4>
                 </a>
-                <p><strong>Submission Date : </strong></p>
+                <p><strong>Submission Date : 7th September 2023</strong></p>
               </div>
             </div>
           </div>
@@ -493,12 +579,12 @@
         <div class="row">
           <div class="column">
             <div class="card">
-              <div class="container">
+              <div class="container" style="background-color:#69ADC9;">
                 <br>
-                <a href="#" target="_blank">
-                  <h4 style="color:#555">Final Presentation</h4>
+                <a href="./Documents/Final_2023-035.pptx" target="_blank" download>
+                  <h4 style="color:#FDFEFE">Final Presentation</h4>
                 </a>
-                <p><strong>Submission Date : </strong></p>
+                <p><strong>Submission Date : 30th October 2023</strong></p>
               </div>
             </div>
           </div>
@@ -509,65 +595,70 @@
   <!-- Team members -->
   <section id="about" class="main-sections " style="background-color:#FDFEFE"><br>
     <div class="container"><br><br>
-      <h2 style="color:#9a6161">Meet Our Team !</h2>
+      <h2 style="color:#003047">Meet Our Team !</h2>
 
-      <div class="row"> 
-
- 		<div class="cardp">
-        <img src="./Profiles/dineth.png">
-        <div class="detailsp">
-          <h3>Dineth Wijayasena</h3>
-          <p>Associate Cloud Engineer</p>
-          <div class="social-linksp">
-            <a href="#"><i class="uil uil-facebook-f"></i></a>
-            <a href=""><i class="uil uil-instagram"></i></a>
-            <a href=""><i class="uil uil-twitter-alt"></i></a>
-            <a href=""><i class="uil uil-whatsapp"></i></a>
+      <div class="row" style="display: flex; align-items: center; justify-content: center;"> 
+        <div class="cardp">
+          <img src="./Profiles/prasanna.png" alt="Mr. Prasanna">
+          <div class="detailsp">
+            <h3>Mr. Prasanna S. Haddela</h3>
+            <p>Supervisor</p>
+            <div class="social-linksp">
+              <a href="mailto:prasanna.s@sliit.lk"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/prasanna-s-haddela-2751037/"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
       </div>
 
-       <div class="cardp">
-        <img src="./Profiles/ishma.png">
-        <div class="detailsp">
-          <h3>Ishma Senaweera</h3>
-          <p>Associate Software Engineer</p>
-          <div class="social-linksp">
-            <a href="#"><i class="uil uil-facebook-f"></i></a>
-            <a href=""><i class="uil uil-instagram"></i></a>
-            <a href=""><i class="uil uil-twitter-alt"></i></a>
-            <a href=""><i class="uil uil-whatsapp"></i></a>
+      <div class="row">
+        <div class="cardp">
+          <img src="./Profiles/dineth.png" alt="Dineth">
+          <div class="detailsp">
+            <h3>Dineth Wijayasena</h3>
+            <p>Team Leader</p>
+            <div class="social-linksp">
+              <a href="mailto:dinethwija1806@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/dineth-wijayasena-3b23121b4/"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-       <div class="cardp">
-        <img src="./img/img3.jpg">
-        <div class="detailsp">
-          <h3>Sandeep</h3>
-          <p>App Developer</p>
-          <div class="social-linksp">
-            <a href="#"><i class="uil uil-facebook-f"></i></a>
-            <a href=""><i class="uil uil-instagram"></i></a>
-            <a href=""><i class="uil uil-twitter-alt"></i></a>
-            <a href=""><i class="uil uil-whatsapp"></i></a>
+        <div class="cardp">
+          <img src="./Profiles/ishma.png" alt="Ishma">
+          <div class="detailsp">
+            <h3>Ishma Senaweera</h3>
+            <p>Team Member</p>
+            <div class="social-linksp">
+              <a href="mailto:ishmasenaweera@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/ishma-senaweera-5aa6581b5/"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
-      </div>
 
-       <div class="cardp">
-        <img src="./img/img3.jpg">
-        <div class="detailsp">
-          <h3>Sandeep</h3>
-          <p>App Developer</p>
-          <div class="social-linksp">
-            <a href="#"><i class="uil uil-facebook-f"></i></a>
-            <a href=""><i class="uil uil-instagram"></i></a>
-            <a href=""><i class="uil uil-twitter-alt"></i></a>
-            <a href=""><i class="uil uil-whatsapp"></i></a>
+        <div class="cardp">
+          <img src="./Profiles/nisura.png" alt="Nisura">
+          <div class="detailsp">
+            <h3>Nisura Weerasekara</h3>
+            <p>Team Member</p>
+            <div class="social-linksp">
+              <a href="mailto:nisansith@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/nisura-weerasekara-33160121a/"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="cardp">
+          <img src="./Profiles/kavindu.png" alt="kavindu">
+          <div class="detailsp">
+            <h3>Kavindu Colambage</h3>
+            <p>Team Member</p>
+            <div class="social-linksp">
+              <a href="mailto:githmink@gmail.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/kavindu-githmin-96a97b241/"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
 
       </div>     
     </div>
@@ -576,14 +667,17 @@
   <!-- Achievements -->
   <section id="achievements" style="background-color:white;"><br>
     <div class="container"><br><br>
-      <h2 style="color:#2F4858">Achivements</h2>
+      <h2 style="color:#003047">Achivements</h2>
       </br>
       <div class="column">
         <div class="card">
-          <div class="container" style="background-color:#969fff;">
+          <div class="container" style="background-color:#CAF4EC;">
             <br>
             <h4>Conference</h4>
-            <p>Represented Sri Lanka Institute of Information Technology and Published the research paper </p>
+            <p>Will be representing Sri Lanka Institute of Information Technology (SLIIT) at 
+              3rd International Conference on Innovative Computing, Intelligent Communication and Smart Electrical systems (ICSES -2023)
+              on 14th & 15th December, 2023.
+            </p>
             <br>
           </div>
         </div>
@@ -594,9 +688,10 @@
 
   <!-- footer section start -->
   <footer>
-    <span>Created By <a href="#">BloomQuest Team</a> | <span class="far fa-copyright"></span> 2023 All rights
+    <span>Created By <span style="color: #98DCF9"> <strong>BloomQuest Team</strong></span> | <span class="far fa-copyright"></span> 2023 All rights
       reserved.</span>
   </footer>
+
   <!-- Scripts -->
   <script src="./lib/jquery/jquery-3.5.1.slim.min.js"></script>
   <script src="./lib/fontawesome/js/all.min.js"></script>
