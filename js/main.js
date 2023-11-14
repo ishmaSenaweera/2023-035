@@ -53,25 +53,6 @@ var topMenu = $("#navmenu-links"),
     } catch {}
   });
 
-// Bind to scroll
-// $(window).scroll(function(){
-//    // Get container scroll position
-//    var fromTop = $(this).scrollTop()+topMenuHeight;
-
-//    // Get id of current scroll item
-//    var cur = scrollItems.map(function(){
-//      if ($(this).offset().top < fromTop)
-//        return this;
-//    });
-//    // Get the id of the current element
-//    cur = cur[cur.length-1];
-//    var id = cur && cur.length ? cur[0].id : "";
-//    // Set/remove active class
-//    menuItems
-//      .parent().removeClass("active")
-//      .end().filter("[href='#"+id+"']").parent().addClass("active");
-// });​
-
 $(window).scroll(function () {
   // Get Container Scroll Position
   var fromTop = $(this).scrollTop() + topMenuHeight;
@@ -118,3 +99,37 @@ let homeSectionHeight = $("#home").height() - 70;
 console.log(homeSectionHeight);
 $("#project-scope").css("margin-top", homeSectionHeight + "px");
 // $('#project-scope').css('height', homeSectionHeight + 'px')
+
+let tabs = document.querySelectorAll(".tabsR h3");
+let tabContents = document.querySelectorAll(".tab-contentR div");
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tabContents.forEach((content) => {
+      content.classList.remove("activeR");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("activeR");
+    });
+    tabContents[index].classList.add("activeR");
+    tabs[index].classList.add("activeR");
+  });
+});
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
